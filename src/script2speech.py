@@ -19,7 +19,7 @@ tts = TTS("tts_models/multilingual/multi-dataset/xtts_v2").to(device)
 
 counter = 0
 for text in lines:
-    VOICE_FILE = 'voice1.wav' if counter % 2 == 0 else 'voice2.wav'
+    VOICE_FILE = 'male.mp3' if counter % 2 == 0 else 'female.mp3'
     counter += 1
-    tts.tts_to_file(text=text, speaker_wav=f"C:\\Doc2Podcast\\{VOICE_FILE}", language="en", file_path=f"output_{counter}.wav")
+    tts.tts_to_file(text=text, speaker_wav=f"C:\\Doc2Podcast\\{VOICE_FILE}", language="en", file_path=f"output_new_{counter}.wav")
     

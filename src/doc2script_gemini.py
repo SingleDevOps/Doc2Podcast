@@ -1,6 +1,5 @@
 from google import genai
 import pdfplumber
-import json
 all_text = ''
 prompt = """
 Generate a 10-minute podcast transcript (2500+ words) between Host and Guest using STRICT format, based on the provided text:
